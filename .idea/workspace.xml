@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="513d21f1-eb5b-4fec-a106-79ae13870878" name="Changes" comment="Testing PyCharm.">
-      <change beforePath="$PROJECT_DIR$/.idea/FR_Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FR_Template.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Exemple_Services/gpt_Exemple_RNOpa02_Procedurale.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Exemple_Services/gpt_Exemple_RNOpa02_Procedurale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Exemple_Services/renault_prix_daily.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Exemple_Services/renault_prix_daily.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718311686787</updated>
       <workItem from="1754939185539" duration="566000" />
-      <workItem from="1754940664190" duration="2318000" />
+      <workItem from="1754940664190" duration="2380000" />
     </task>
     <task id="LOCAL-00001" summary="Testing PyCharm.">
       <option name="closed" value="true" />
