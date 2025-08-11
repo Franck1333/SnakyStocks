@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="513d21f1-eb5b-4fec-a106-79ae13870878" name="Changes" comment="Testing PyCharm.">
+      <change beforePath="$PROJECT_DIR$/.idea/FR_Template.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FR_Template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Exemple_Services/gpt_Exemple_RNOpa02_Procedurale.py" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Exemple_Services/gpt_Exemple_RNOpa02_Procedurale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Exemple_Services/renault_prix_daily.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Exemple_Services/renault_prix_daily.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.Interface_Tkinter_Template.executor": "Run",
+    "Python.gpt_Exemple_RNOpa02_Procedurale.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -120,6 +125,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.439" />
         <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
       </set>
     </attachedChunks>
@@ -133,6 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718311686787</updated>
       <workItem from="1754939185539" duration="566000" />
+      <workItem from="1754940664190" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="Testing PyCharm.">
       <option name="closed" value="true" />
@@ -175,15 +182,7 @@
     <MESSAGE value="Testing PyCharm." />
     <option name="LAST_COMMIT_MESSAGE" value="Testing PyCharm." />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Services/Exemple_Services/Infos_Hardware.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Recuperation_FR_GPS_py$gpt_Exemple_RNOpa02_Procedurale.coverage" NAME="gpt_Exemple_RNOpa02_Procedurale Coverage Results" MODIFIED="1754942960752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services/Exemple_Services" />
   </component>
 </project>

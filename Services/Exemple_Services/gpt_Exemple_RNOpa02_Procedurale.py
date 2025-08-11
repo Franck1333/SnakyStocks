@@ -16,7 +16,7 @@ def get_stock_data(symbol, api_key):
     params = {
         "function": "TIME_SERIES_DAILY",
         "symbol": symbol,
-        "outputsize": "compact",
+        "outputsize": "compact", #ou full
         "apikey": api_key
     }
     response = requests.get(URL, params=params)
@@ -43,14 +43,14 @@ def process_data(raw_timeseries):
 
     df.index = pd.to_datetime(df.index)
     df = df.sort_index()
-    df = df[["Low", "Close", "High"]].astype(float)
+    df = df[["Open", "Low", "High", "Close"]].astype(float)
 
     return df
 
 
 def display_data(df, days=5):
     """Affiche les dernières données."""
-    print(f"\n📊 Derniers {days} jours pour Renault ({SYMBOL}) :\n")
+    print(f"\n📊 Derniers {days} jours pour ({SYMBOL}) :\n")
     print(df.tail(days))
 
 
