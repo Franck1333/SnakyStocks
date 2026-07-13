@@ -7,6 +7,8 @@
 # https://ranaroussi.github.io/yfinance/#quick-start
 # https://ranaroussi.github.io/yfinance/reference/index.html
 
+import datetime                     #Framework permettant de gérer les dates et les heures.
+
 import yfinance as yf               #Framework permettant l'obtention des informations financières.
 import pandas as pd                 #Framework permettant le traitement des informations reçues.
 import matplotlib.pyplot as plt     #Framework permettant de générer des graphiques.
@@ -36,7 +38,11 @@ def yfinance(ticker, period='5d', output_csv=True):                             
         
         # Save data to CSV if requested
         if output_csv:
-            csv_filename = f"HISTORIQUE_{ticker}_{period}.csv"                                                                                      # Create a CSV filename based on the ticker and period
+            rootCSV = Path(__file__).resolve().parents[2]                                                                                           # Remonter de deux niveaux pour atteindre le répertoire racine du projet
+            reportPath = rootCSV / "Rapports"/ "CSV"                                                                                                # Chemin vers le répertoire "Rapports/CSV"
+            reportPath.mkdir(parents=True, exist_ok=True)                                                                                           # Créer le répertoire s'il n'existe pas           
+            D = datetime.datetime.now()                                                                                                             # Get the current date and time for timestamping the CSV file
+            csv_filename = reportPath / f"HISTORIQUE_{ticker}_{period}_{D.strftime('%Y-%m-%d_%H-%M-%S')}.csv"                                       # Create a CSV filename based on the ticker and period
             history.to_csv(csv_filename)                                                                                                            # Save the historical data to a CSV file with a name based on the ticker and period
             print(f"Data saved to {csv_filename}")                                                                                                  # Affichage console pour confirmer l'enregistrement du fichier CSV
         
@@ -61,9 +67,10 @@ def yfinance(ticker, period='5d', output_csv=True):                             
         
         # Enregistrer le graphique en haute résolution
         rootPNG = Path(__file__).resolve().parents[2]                                                                                               # Remonter de deux niveaux pour atteindre le répertoire racine du projet
-        report = rootPNG / "Rapports"/ "PNG"                                                                                                        # Chemin vers le répertoire "Rapports/PNG"
-        report.mkdir(parents=True, exist_ok=True)                                                                                                   # Créer le répertoire s'il n'existe pas 
-        filename = report / f"{ticker}_{period}.png"                                                                                                # Nom du fichier PNG
+        reportPath = rootPNG / "Rapports"/ "PNG"                                                                                                    # Chemin vers le répertoire "Rapports/PNG"
+        reportPath.mkdir(parents=True, exist_ok=True)                                                                                               # Créer le répertoire s'il n'existe pas 
+        D = datetime.datetime.now()                                                                                                                 # Get the current date and time for timestamping the CSV file
+        filename = reportPath / f"{ticker}_{period}_{D.strftime('%Y-%m-%d_%H-%M-%S')}.png"                                                          # Create a PNG filename based on the ticker and period
         plt.savefig(filename, dpi=600, bbox_inches='tight')                                                                                         # Enregistrer le graphique en haute résolution (600 dpi) avec des marges ajustées
         print(f"Data saved to {filename}")                                                                                                          # Affichage console pour confirmer l'enregistrement du graphique
         plt.close()                                                                                                                                 # Fermer la figure pour libérer de la mémoire et éviter les conflits avec d'autres graphiques
