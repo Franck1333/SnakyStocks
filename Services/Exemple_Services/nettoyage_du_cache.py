@@ -5,10 +5,7 @@
 #AIDES: https://pythonconverter.com/
 #Aides : https://blog.mozilla.org/webdev/2015/10/27/eradicating-those-nasty-pyc-files/
 
-import serial
-import time
 import os
-import sys
 
 #Supprime les fichiers CACHE du language PYTHON
 def clear_cache():

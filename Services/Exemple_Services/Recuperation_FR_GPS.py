@@ -6,11 +6,6 @@
 #https://raspberry-pi.developpez.com/cours-tutoriels/projets-rpi-zero/traceur-gps/
 
 import serial
-import time
-import os
-import sys
-
-import unicodedata #Cette blibliothèque permet de travailler avec du contenue contenant des accents
 
 ser = serial.Serial('/dev/ttyACM0',4800,timeout=1) # Open Serial port Configure le Recepteur G.P.S 
 

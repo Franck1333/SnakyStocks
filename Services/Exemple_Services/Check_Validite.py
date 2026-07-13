@@ -1,15 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-import serial
-import time
-import os
-import sys
-
-from Recuperation_Determination import *
-from Recuperation_Determination import parse_GPRMC
+from Recuperation_Determination import * # type: ignore
 #from Recuperation_Determination import ouverture_serie
-from Recuperation_Determination import lecture_return_serie
+from Recuperation_Determination import lecture_return_serie # type: ignore
 
 try :
     from Tkinter import * #Python Version 2

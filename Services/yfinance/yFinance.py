@@ -8,7 +8,6 @@
 # https://ranaroussi.github.io/yfinance/reference/index.html
 
 import datetime                     #Framework permettant de gérer les dates et les heures.
-
 import yfinance as yf               #Framework permettant l'obtention des informations financières.
 import pandas as pd                 #Framework permettant le traitement des informations reçues.
 import matplotlib.pyplot as plt     #Framework permettant de générer des graphiques.
@@ -74,8 +73,8 @@ def yfinance(ticker, period='5d', output_csv=True):                             
         plt.savefig(filename, dpi=600, bbox_inches='tight')                                                                                         # Enregistrer le graphique en haute résolution (600 dpi) avec des marges ajustées
         print(f"Data saved to {filename}")                                                                                                          # Affichage console pour confirmer l'enregistrement du graphique
         plt.close()                                                                                                                                 # Fermer la figure pour libérer de la mémoire et éviter les conflits avec d'autres graphiques
-        #plt.show()
-        
+        #plt.show()                                                                                                                                 # Uncomment this line to display the plot interactively (useful for debugging or interactive sessions)
+                
         return history                                                                                                                              # Return the historical price data as a DataFrame
         
     except Exception as e:                                                                                                                          # Handle any exceptions that occur during data fetching or processing
@@ -86,4 +85,4 @@ def yfinance(ticker, period='5d', output_csv=True):                             
 if __name__ == "__main__":
     # Example usage
     yfinance("RNO.PA", period='3mo') # Fetch and plot data for Renault (RNO.PA) over the last 3 months
-    # yfinance("MSFT", period='1mo')
+    # yfinance("MSFT", period='max')   # Fetch and plot data for Microsoft (MSFT) over the maximum available period

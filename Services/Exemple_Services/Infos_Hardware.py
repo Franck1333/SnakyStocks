@@ -9,14 +9,7 @@
 #AIDES: https://docs.python.org/2/library/commands.html
 
 
-import os
-import sys
-import datetime
-import time
-from nettoyage_du_cache import clear_cache
-
-
-import io
+import nettoyage_du_cache
 import subprocess
 
 
@@ -78,7 +71,7 @@ def MEM_info():
 
 
 if __name__ == "__main__":
-    clear_cache()           #Nettoyage du Cache Python.
+    nettoyage_du_cache.clear_cache()           #Nettoyage du Cache Python.
     CPU_usage()             #Obtention du Niveau d'utilisation du Processeur.
     CPU_temp()              #Obtention de la Temperature du Processeur.
     SoC_info()              #Obtention d'information par rapport au Couple CPU/GPU.
