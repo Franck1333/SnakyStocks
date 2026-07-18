@@ -13,6 +13,36 @@ import pandas as pd                 #Framework permettant le traitement des info
 import matplotlib.pyplot as plt     #Framework permettant de générer des graphiques.
 from pathlib import Path            #Framework permettant de gérer les chemins de fichiers et de répertoires.
 
+"""
+***TO REMOVE BEFORE RELEASE***
+Feature : News
+https://ranaroussi.github.io/yfinance/reference/api/yfinance.Ticker.get_news.html
+
+Objectif :
+- récupérer les news d'un ticker
+
+Étape 1
+✔ Étudier la documentation
+
+Étape 2
+□ Faire un POC
+
+Étape 3
+□ Comprendre la structure des données
+
+Étape 4
+□ Export JSON / CSV
+
+Étape 5
+□ Intégration dans SnakyStocks
+
+Étape 6
+□ Affichage dans Flet
+
+//Puis s'organiser autour de FLET et de l'usage sur VPS.
+//--> Un argument spécifique pour l'usage sur VPS (ex: --vps) pour ne pas lancer FLET.
+***TO REMOVE BEFORE RELEASE***
+"""
 
 def yfinance(ticker, period='5d', output_csv=True):                                                                                                 # Obtention des informations financières pour un ticker donné et génération d'un graphique des prix Open/Close.
     """
