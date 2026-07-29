@@ -25,7 +25,7 @@ Objectif :
 ✔ Étudier la documentation
 
 Étape 2
-□ Faire un POC
+□ Faire un POC (proof of conceptà
 
 Étape 3
 □ Comprendre la structure des données
