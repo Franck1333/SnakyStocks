@@ -7,9 +7,15 @@ def main(page: ft.Page):
     page.title = "HOMESCREEN"
 
 #DESSUS!
+<<<<<<< HEAD
     page.add(ft.Text("info NETWORK"))
     page.add(ft.Text("live HEURE"))
     page.add(ft.Text("info NIV.BATTERIE"))
+=======
+    page.add(ft.Text("PLACEHOLDER_NETWORK"))
+    page.add(ft.Text("PLACEHOLDER_HEURE"))
+    page.add(ft.Text("PLACEHOLDER_NIV.BATTERIE"))
+>>>>>>> 2fb7bdd (Experiment Flet)
 
 #MILLIEU
     page.add(ft.Text("BOUTONS ACTIONS A PLACER ET A CONFIGURER!"))
