@@ -8,6 +8,7 @@ def main(page: ft.Page):
 
 #DESSUS!
 <<<<<<< HEAD
+<<<<<<< HEAD
     page.add(ft.Text("info NETWORK"))
     page.add(ft.Text("live HEURE"))
     page.add(ft.Text("info NIV.BATTERIE"))
@@ -16,6 +17,11 @@ def main(page: ft.Page):
     page.add(ft.Text("PLACEHOLDER_HEURE"))
     page.add(ft.Text("PLACEHOLDER_NIV.BATTERIE"))
 >>>>>>> 2fb7bdd (Experiment Flet)
+=======
+    page.add(ft.Text("PLACEHOLDER_NETWORK"))
+    page.add(ft.Text("PLACEHOLDER_HEURE"))
+    page.add(ft.Text("PLACEHOLDER_NIV.BATTERIE"))
+>>>>>>> origin/ExperimentingFletTools
 
 #MILLIEU
     page.add(ft.Text("BOUTONS ACTIONS A PLACER ET A CONFIGURER!"))
